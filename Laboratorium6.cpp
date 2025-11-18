@@ -30,7 +30,7 @@ int main()
 */
 
 //ZAD.2
-
+/*
 int tab[10];
 int rozmiar = 10;
 int usun();
@@ -66,11 +66,9 @@ int usun() {
 	cin >> x;
 
 
-	for (int i = 0; i < 9; i++) {
-		if (x = i) {
-			break;
-		}
-		else {
+	for (int i = 0; i < 10; i++) {
+		if (x != i) {
+			tab[x] = {};
 			cout << tab[i] << "  ";
 		}
 
@@ -79,6 +77,10 @@ int usun() {
 	return 0;
 
 }
+*/
+
+//ZAD.3
+
 
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
