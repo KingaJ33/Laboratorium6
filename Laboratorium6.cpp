@@ -40,18 +40,25 @@ int main() {
 	
 	cout << "podaj 10 wartosci calkowitych ";
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < rozmiar; i++) {
 		cin >> a;
 
 		tab[i] = a;
 
 	}
 
-	for (int i = 0; i < 10; i++) {
+	
+
+	for (int i = 0; i < rozmiar; i++) {
 		cout << tab[i] << "  ";
 	}
 
 	usun();
+
+	cout << "Tablica po usunieciu: ";
+	for (int i = 0; i < rozmiar; i++) {
+		cout << tab[i] << " ";
+	}
 
 
 	return 0;
@@ -65,14 +72,13 @@ int usun() {
 	cout << " ktora pozycje w tabeli usunac?" << endl;
 	cin >> x;
 
-
-	for (int i = 0; i < 10; i++) {
-		if (x != i) {
-			tab[x] = {};
-			cout << tab[i] << "  ";
-		}
-
+	for (int i = x; i < rozmiar - 1; i++) {
+		tab[i] = tab[i + 1];
 	}
+
+	
+	rozmiar--;
+		
 
 	return 0;
 
