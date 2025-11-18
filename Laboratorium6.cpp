@@ -86,6 +86,55 @@ int usun() {
 */
 
 //ZAD.3
+/*
+float TEMP1[10];
+float TEMP2[10];
+int INDEKS = 0;
+
+float przelicz(float temperatura);
+void zapisz(float temp_podana, float temp_wyliczona);
+void wyswietl();
+
+int main() {
+	float temp_podana;
+	float wynik;
+
+	for (int i = 0; i < 10; i++) {
+		cout << "Podaj temperature nr " << i + 1 << ": ";
+		cin >> temp_podana;
+
+		wynik = przelicz(temp_podana);
+		zapisz(temp_podana, wynik);
+	}
+
+	wyswietl();
+
+	return 0;
+}
+
+float przelicz(float temperatura) {
+	return temperatura + 273.15;
+}
+
+void zapisz(float temp_podana, float temp_wyliczona) {
+	if (INDEKS < 10) {
+		TEMP1[INDEKS] = temp_podana;
+		TEMP2[INDEKS] = temp_wyliczona;
+		INDEKS++;
+	}
+	else {
+		cout << "Koniec miejsca w tablicy, przeliczenie nie zostanie zapisane" << endl;
+	}
+}
+
+void wyswietl() {
+	for (int i = 0; i < INDEKS; i++) {
+		cout << i << ": " << TEMP1[i] << "-> " << TEMP2[i] << endl;
+	}
+}
+
+*/
+
 
 
 
